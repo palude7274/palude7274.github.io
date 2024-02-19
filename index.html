@@ -25,13 +25,14 @@
             pageAside.classList.remove('hidden');
         }
     });
+
 </script>
 <body>
     <div class="portfolio-page">
         <div class ="page-wrap">
             <aside id="page-aside" class="page-aside">
                 <div class="id-intro">
-                    <div class="id-photo">사진</div>
+                    <div class="id-photo"><img src="images/freshman.jpeg" /></div>
                     <h1 class="id-name">박건도</h1>
                     <span class="id-position">웹 개발자</span>
                 </div>
@@ -50,21 +51,24 @@
                 <section class="projects">
                     <div class="first-project">
                         <div class="project-title">
-                            <p>Ezen_Univ</p>
-                            <p>팀 프로젝트</p>
+                            <p class="title-1">Ezen_Univ</p>
+                            <p class="title-2">팀 1차 프로젝트</p>
+                            <p class="title-3">2023.10.28 ~ 2023.12.01</p>
                         </div>
                         <div class="project-view">
-                            <div class="first-visual-list">
-                                <div><img src="images/ezenUniv-1.png"></div>
-                                <div><img src="images/ezenUniv-2.png"></div>
-                                <div><img src="images/ezenUniv-3.png"></div>
-                                <div><img src="images/ezenUniv-4.png"></div>
-                                <div><img src="images/ezenUniv-5.png"></div>
-                                <div><img src="images/ezenUniv-6.png"></div>
-                                <div><img src="images/ezenUniv-7.png"></div>
-                                <div><img src="images/ezenUniv-8.png"></div>
-                                <div><img src="images/ezenUniv-9.png"></div>
-                                <div><img src="images/ezenUniv-10.png"></div>
+                            <div class="firsr-container">
+                                <div class="first-visual-list">
+                                    <div><img class="project-img" src="images/ezenUniv-1.png"></div>
+                                    <div><img class="project-img" src="images/ezenUniv-2.png"></div>
+                                    <div><img class="project-img" src="images/ezenUniv-3.png"></div>
+                                    <div><img class="project-img" src="images/ezenUniv-4.png"></div>
+                                    <div><img class="project-img" src="images/ezenUniv-5.png"></div>
+                                    <div><img class="project-img" src="images/ezenUniv-6.png"></div>
+                                    <div><img class="project-img" src="images/ezenUniv-7.png"></div>
+                                    <div><img class="project-img" src="images/ezenUniv-8.png"></div>
+                                    <div><img class="project-img" src="images/ezenUniv-9.png"></div>
+                                    <div><img class="project-img" src="images/ezenUniv-10.png"></div>
+                                </div>
                             </div>
                             <div class="first-control">
                                 <div class="btn-area">
@@ -82,13 +86,19 @@
                             </div>
                         </div>  
                         <div class="project-story">
-                            <p>어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구</p>
+                            <p><b>JSP & Servlet MVC Model2 방식으로 구현한 웹 출결 시스템입니다.</b>
+                            관리자, 학생과 교수 모두 간편하고 쉽게 출결 시스템을 접근할 수 있게 개발하였습니다.</p>
+                            <p>첫 팀 프로젝트입니다. 관리자 부분의 프론트와 백 엔드를 맡아 다양한 기능 구현을 위해 <span class="span-red">javascript, jstl, jquery, ajax</span>를
+                            사용함으로써 낯선 코드에 대해 익숙해질 수 있었습니다. 또한 원하는 데이터가 가져오기 위한 쿼리문을 작성함으로서 데이터를 만지는 데 있어
+                            많은 경험을 쌓을 수 있었습니다. 
+                            </p>
                         </div>
                     </div>
                     <div class="second-project">
                         <div class="project-title">
-                          <p>Ezen_Jeonju</p>
-                          <p>팀 프로젝트</p>
+                          <p class="title-1">Ezen_Jeonju</p>
+                          <p class="title-2">팀 2차 프로젝트</p>
+                          <p class="title-3">2023.12.04 ~ 2023.01.19</p>
                         </div>
                         <div class="project-view">
                             <div class="second-visual-list">
@@ -119,7 +129,7 @@
                             </div>
                         </div>  
                         <div class="project-story">
-                          <p>어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구</p>
+                          <p>Sprong Framework으로 구현한 SNS 데이터 활용 지역 관공 홍보 홈페이지입니다.</p>
                         </div>
                     </div>
                 </section>
