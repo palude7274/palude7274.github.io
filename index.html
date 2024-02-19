@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>박건도 Web개발자</title>
-    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="index.css" />
-    <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </head>
 
 <script>
@@ -24,8 +24,6 @@
             // 그렇지 않으면 숨김 클래스 제거
             pageAside.classList.remove('hidden');
         }
-
-        
     });
 </script>
 <body>
@@ -128,81 +126,7 @@
                 <section class="contact"></section>
             </div>
         </div>
-    </div>
-    <script>
-      $(document).ready(function(){  
-    
-    // 메인배너 텍스트 슬라이드
-   $('.first-visual-list').slick({
-       infinite: true,
-     fade: true,
-       autoplay: false,
-       autoplaySpeed: 3000,
-       slidesToShow: 1,
-       slidesToScroll: 1,
-   
-       prevArrow : $('.first-btn-prev'), 
-       nextArrow : $('.first-btn-next'),
-       
-
-   });
-   
-
-   // 초기에 페이지 번호 및 토탈 넘버 설정
-   var initialCurrentSlide = $('.first-visual-list').slick('slickCurrentSlide') + 1;
-   var totalSlides = $('.first-visual-list').slick('getSlick').slideCount;
-
-   // 초기 페이지 번호 설정
-   $('.first-current-num').text(initialCurrentSlide);
-   // 초기 토탈 넘버 설정
-   $('.first-total-num').text(totalSlides);
-
-   // 슬라이더의 afterChange 이벤트 핸들러
-   $('.first-visual-list').on('afterChange', function (event, slick, currentSlide) {
-       // 현재 슬라이드 번호를 가져옵니다.
-       var currentSlideNumber = currentSlide + 1;
-
-       // 페이지 번호 업데이트
-       $('.first-current-num').text(currentSlideNumber);
-   });
-
-
-        // 메인배너 텍스트 슬라이드
-          $('.second-visual-list').slick({
-           infinite: true,
-           fade: true,
-           autoplay: false,
-           autoplaySpeed: 3000,
-           slidesToShow: 1,
-           slidesToScroll: 1,
-       
-           prevArrow : $('.second-btn-prev'), 
-           nextArrow : $('.second-btn-next'),
-           
-   
-       });
-       
-   
-       // 초기에 페이지 번호 및 토탈 넘버 설정
-       var initialCurrentSlide = $('.second-visual-list').slick('slickCurrentSlide') + 1;
-       var totalSlides = $('.second-visual-list').slick('getSlick').slideCount;
-   
-       // 초기 페이지 번호 설정
-       $('.second-current-num').text(initialCurrentSlide);
-       // 초기 토탈 넘버 설정
-       $('.second-total-num').text(totalSlides);
-   
-       // 슬라이더의 afterChange 이벤트 핸들러
-       $('.second-visual-list').on('afterChange', function (event, slick, currentSlide) {
-           // 현재 슬라이드 번호를 가져옵니다.
-           var currentSlideNumber = currentSlide + 1;
-   
-           // 페이지 번호 업데이트
-           $('.second-current-num').text(currentSlideNumber);
-       });
-
-});
-
-    </script> 
+    </div> 
 </body>
 </html>
+<script src="index.js"></script>
