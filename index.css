@@ -2,15 +2,16 @@ body {
     font-family: "Quicksand", Arial, sans-serif;
     font-size: 20px;
     color: black;
-
+    box-sizing: border-box;
 }
+
 
 .portfolio-page {
     width: 100%;
 }
 
 .page-wrap {
-    max-width: 80%;
+    max-width: 1120px;
     margin: auto;
     background-color: aqua;
 }
@@ -84,6 +85,88 @@ body {
 
 }
 
+section {
+    width: 100%;
+}
+
+.first-project {
+    padding: 25px;
+    width: 100%;
+    display: inline-block;
+}
+
+.second-project {
+    padding: 25px;
+    width: 100%;
+    display: inline-block;
+}
+
+.project-title {
+    width: 100%;
+}
+
+.project-view {
+    width: 100%;
+    margin: auto;
+}
+
+.project-story {
+    width: 100%;
+}
+
+.project-story p{
+    margin: 10px;
+}
+
+
+.first-visual-list img {
+    max-width: 100%;
+    margin: auto;
+}
+
+.first-control {
+    text-align: center;
+}
+
+.first-control .btn-area{
+    padding-top: 10px;
+    
+}
+
+
+.second-visual-list img {
+    max-width: 100%;
+    margin: auto;
+}
+
+.second-control {
+    text-align: center;
+}
+
+.second-control .btn-area{
+    padding-top: 10px;
+    
+}
+
+.first-btn-prev,
+.first-btn-next,
+.second-btn-prev,
+.second-btn-next {
+    border-radius: 50%;
+    background-color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.xi-angle-left-thin,
+.xi-angle-right-thin {
+    font-size: 17px; /* 원하는 크기로 조정 */
+}
+
+
+
+
 
 @media screen and (max-width: 768px) {
     .page-aside.hidden {
@@ -101,5 +184,31 @@ body {
         width: 100%;
     }
 
+
+
 }
 
+@media screen and (max-width: 992px) {
+    .project-view {
+        width: 100%;
+    }
+
+    .project-story {
+        width: 100%;
+    }
+
+    .project-story p{
+        margin: 10%;
+    }
+    .first-project {
+        padding: 0px;
+    }
+
+    .second-project {
+        padding: 0px;
+    }
+
+    .project-title p{
+        text-align: center;
+    }
+}

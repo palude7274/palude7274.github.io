@@ -3,9 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <link rel="stylesheet" href="index.css" />
     <title>박건도 Web개발자</title>
+    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </head>
 
 <script>
@@ -15,7 +18,7 @@
         var width = window.innerWidth;
 
         // 브라우저 창 크기가 768px 이하이면 숨김 클래스 추가
-        if (width <= 768) {
+        if (width <= 775) {
             pageAside.classList.add('hidden');
         } else {
             // 그렇지 않으면 숨김 클래스 제거
@@ -38,30 +41,92 @@
                     <li><a href="#">SKILLS</a></li>
                     <li><a href="#">PROJECTS</a></li>
                     <li><a href="#">CONTACT</a></li>
-
                 </ul>
             </aside>
             <div class="main">
-                <div></div>
-
-<div class="container">
-  <div class="row">
-    <div class="col-lg-6 col-md-6 col-sm-12">
-      <div class="custom-div">
-        <h3>첫 번째 div</h3>
-        <p>내용...</p>
-      </div>
-    </div>
-    <div class="col-lg-6 col-md-6 col-sm-12">
-      <div class="custom-div">
-        <h3>두 번째 div</h3>
-        <p>내용...</p>
-      </div>
-    </div>
-  </div>
-</div>
+                <section class="home"></section>
+                <section class="introduction"></section>
+                <section class="skills"></section>
+                <section class="projects">
+                    <div class="first-project">
+                        <div class="project-title">
+                            <p>Ezen_Univ</p>
+                            <p>팀 프로젝트</p>
+                        </div>
+                        <div class="project-view">
+                            <div class="first-visual-list">
+                                <div><img src="images/ezenUniv-1.png"></div>
+                                <div><img src="images/ezenUniv-2.png"></div>
+                                <div><img src="images/ezenUniv-3.png"></div>
+                                <div><img src="images/ezenUniv-4.png"></div>
+                                <div><img src="images/ezenUniv-5.png"></div>
+                                <div><img src="images/ezenUniv-6.png"></div>
+                                <div><img src="images/ezenUniv-7.png"></div>
+                                <div><img src="images/ezenUniv-8.png"></div>
+                                <div><img src="images/ezenUniv-9.png"></div>
+                                <div><img src="images/ezenUniv-10.png"></div>
+                            </div>
+                            <div class="first-control">
+                                <div class="btn-area">
+                                    <button class="first-btn-prev" type="button">
+                                        <i class="xi-angle-left-thin"></i>
+                                    </button>
+                                    <span class="first-current-num"></span>
+                                    <span>/</span>
+                                    <span class="first-total-num"/></span>
+                                    </button>
+                                    <button class="first-btn-next" type="button">
+                                        <i class="xi-angle-right-thin"></i>
+                                    </button>    
+                                </div>
+                            </div>
+                        </div>  
+                        <div class="project-story">
+                            <p>어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구</p>
+                        </div>
+                    </div>
+                    <div class="second-project">
+                        <div class="project-title">
+                          <p>Ezen_Jeonju</p>
+                          <p>팀 프로젝트</p>
+                        </div>
+                        <div class="project-view">
+                            <div class="second-visual-list">
+                                <div><img src="images/ezenJeonju-1.png"></div>
+                                <div><img src="images/ezenJeonju-2.png"></div>
+                                <div><img src="images/ezenJeonju-3.png"></div>
+                                <div><img src="images/ezenJeonju-4.png"></div>
+                                <div><img src="images/ezenJeonju-5.png"></div>
+                                <div><img src="images/ezenJeonju-6.png"></div>
+                                <div><img src="images/ezenJeonju-7.png"></div>
+                                <div><img src="images/ezenJeonju-8.png"></div>
+                                <div><img src="images/ezenJeonju-9.png"></div>
+                                <div><img src="images/ezenJeonju-10.png"></div>
+                            </div>
+                            <div class="second-control">
+                                <div class="btn-area">
+                                    <button class="second-btn-prev" type="button">
+                                        <i class="xi-angle-left-thin"></i>
+                                    </button>
+                                    <span class="second-current-num"></span>
+                                    <span>/</span>
+                                    <span class="second-total-num"/></span>
+                                    </button>
+                                    <button class="second-btn-next" type="button">
+                                        <i class="xi-angle-right-thin"></i>
+                                    </button>    
+                                </div>
+                            </div>
+                        </div>  
+                        <div class="project-story">
+                          <p>어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="contact"></section>
             </div>
         </div>
     </div> 
 </body>
 </html>
+<script src="index.js"></script>
