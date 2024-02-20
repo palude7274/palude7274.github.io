@@ -201,8 +201,79 @@ section {
     font-size: 17px; /* 원하는 크기로 조정 */
 }
 
+.visual-container {
+    position: relative;
+}
+
+.visual-container .visual-info {
+    color: #fff;
+    position: absolute; left: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.466);
+    width: 90%;
+    height: 100%;
+    margin: 0 5% 0 5%;
+    padding: 3%;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: opacity 0.25s ease-in-out;
+}
+
+.visual-container:hover .visual-info {
+  opacity: 1;
+}
+.visual-container .visual-info h3 {
+  font-size: 24px;
+  padding-bottom: 0.4em;
+  overflow:hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-transform: uppercase;
+}
+.visual-container .visual-info p {
+  font-size: 20px;
+}
+
+.text-link{
+    color: rgb(144, 178, 234);
+    text-decoration: none;
+}
+
+.visual-text {
+    width: 100%;
+    display: block;
+    word-wrap: break-word;
+    clear: both;
+    margin-bottom: 10px;
+}
+
+.visual-info .visual-link h5{
+    width: 100%;
+}
 
 
+.visual-info h5 {
+    margin : 0px;   
+    font-size: 25px;
+    display: inline block;
+    float: left;
+    width: 30%;
+    
+}
+
+.visual-info p {
+    float: right;
+    margin: 0px;
+    font-size: 25px;
+    display: inline block;
+    width: 70%;
+    margin-bottom: 15px;
+    
+}
+
+
+.xi-check, .xi-paper {
+    padding-right: 15px;
+}
 
 
 @media screen and (max-width: 768px) {
@@ -255,5 +326,15 @@ section {
     }
     .title-3 {
         margin-top: 0;
+    }
+
+    .visual-container .visual-info p {
+        font-size: 15px;
+
+    }
+
+    .visual-info h5 {
+        font-size: 15px;
+
     }
 }
